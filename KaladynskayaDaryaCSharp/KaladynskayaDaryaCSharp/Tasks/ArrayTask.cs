@@ -15,6 +15,7 @@
             }
 
             Console.WriteLine("\nYour Array:");
+
             foreach (int number in numbers)
             {
                 Console.Write(number + " ");

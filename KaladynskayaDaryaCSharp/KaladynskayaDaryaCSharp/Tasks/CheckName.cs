@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace KaladynskayaDaryaCSharp.Tasks
+﻿namespace KaladynskayaDaryaCSharp.Tasks
 {
     public class ChecName
     {
@@ -19,6 +17,7 @@ namespace KaladynskayaDaryaCSharp.Tasks
             {
                 return "Привет, Вячеслав";
             }
+
             else
             {
                 return "Нет такого имени";

@@ -1,6 +1,5 @@
-﻿using static KaladynskayaDaryaCSharp.Constants.MenuKeys;
-using KaladynskayaDaryaCSharp.Tasks;
-using KaladynskayaDaryaCSharp.Constants;
+﻿using KaladynskayaDaryaCSharp.Tasks;
+using static KaladynskayaDaryaCSharp.Constants.MenuKeys;
 
 namespace KaladynskayaDaryaCSharp.Menu
 {
@@ -38,9 +37,9 @@ namespace KaladynskayaDaryaCSharp.Menu
                     default:
                         consoleMenu.ShowMenu();
                         break;
-
                 }
             }
+
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
