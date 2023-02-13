@@ -9,11 +9,11 @@ namespace KaladynskayaDaryaCSharp.Constants
     {
         public enum MenuItems
         {
-            [Description("Task1CheckNumber7")]
-            Task1CheckNumber7 = 1,
-            [Description("Task2VyacheclavCheck")]
-            Task2VyacheclavCheck,
-            [Description("ArrayTask")]
+            [Description("Task1 - CheckNumber")]
+            Task1CheckNumber = 1,
+            [Description("Task2 - NameCheck")]
+            Task2NameCheck,
+            [Description("Task3 - ArrayTask")]
             ArrayTask,
             [Description("Exit")]
             Exit

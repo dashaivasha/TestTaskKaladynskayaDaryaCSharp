@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static KaladynskayaDaryaCSharp.Constants.MenuKeys;
-using static System.Formats.Asn1.AsnWriter;
+﻿using static KaladynskayaDaryaCSharp.Constants.MenuKeys;
+using KaladynskayaDaryaCSharp.Tasks;
 
 namespace KaladynskayaDaryaCSharp.Menu
 {
@@ -16,19 +11,23 @@ namespace KaladynskayaDaryaCSharp.Menu
 
             switch (actions)
             {
-                case (int)MenuItems.Task1CheckNumber7:
-                    var store = new Store();
-                    store.ShowMenu(MenuItems.Store);
+                case (int)MenuItems.Task1CheckNumber:
+                    Console.WriteLine("Enter your number");
+                    var userNumber = Convert.ToInt32(Console.ReadLine());
+                    var checkNumber = new CheckNumber(userNumber);
+                    checkNumber.CheckIsNumber7();
                     consoleMenu.ShowMenu();
                     break;
-                case (int)MenuItems.Task2VyacheclavCheck:
-                    var basket = new BasketMenu();
-                    basket.ShowMenu(MenuItems.Basket);
+                case (int)MenuItems.Task2NameCheck:
+                    Console.WriteLine("Enter name");
+                    var userName = Console.ReadLine();
+                    var checkName = new ChecName(userName);
+                    Console.WriteLine(checkName.CheckIsNameVyacheslav());
                     consoleMenu.ShowMenu();
                     break;
                 case (int)MenuItems.ArrayTask:
-                    Profile profile = new Profile();
-                    profile.ShowMenu(MenuItems.Profile);
+                    var arrayTask = new ArrayTask();
+                    ArrayTask.CheckArray();
                     consoleMenu.ShowMenu();
                     break;
                 case (int)MenuItems.Exit:

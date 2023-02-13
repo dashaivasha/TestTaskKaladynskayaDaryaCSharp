@@ -1,23 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace KaladynskayaDaryaCSharp.Tasks
+﻿namespace KaladynskayaDaryaCSharp.Tasks
 {
-    internal class CheckNumber
+    public class CheckNumber
     {
-        public int number;
+        public int UserNumber;
 
-        public void CheckIs7Number(int userNumber)
-        { 
-            Console.WriteLine("Enter a number: ");
-            
-            if (number > 7)
+        public CheckNumber(int userNumber)
+        {
+            UserNumber = userNumber;
+        }
+
+        public void CheckIsNumber7()
+        {
+            if (UserNumber > 7)
             {
                 Console.WriteLine("Привет");
             }
-    Console.ReadLine();
+        }
     }
 }
