@@ -22,6 +22,9 @@ namespace KaladynskayaDaryaCSharp.Menu
 
                 Console.WriteLine(stringBuilderMenu.ToString());
                 _userChoice = Convert.ToInt32(Console.ReadLine());
+
+                ConsoleMenuManager.CheckChoiceAndRun(_userChoice);
+
             }
 
             catch (Exception ex)
@@ -29,18 +32,7 @@ namespace KaladynskayaDaryaCSharp.Menu
                 Console.WriteLine(ex.Message);
                 ShowMenu();
             }
-
-            try
-                {
-                    ConsoleMenuManager.CheckChoiceAndRun(_userChoice);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                    ShowMenu();
-                }
-            }
         }
     }
-
+}
 
